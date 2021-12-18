@@ -3,7 +3,7 @@
 	
 	<groupId>com.randomnoun.maven.plugins</groupId>
 	<artifactId>java-to-graphviz-maven-plugin</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>maven-plugin</packaging>
 	
 	<description>Create graphviz diagrams from java source code.</description>
@@ -100,7 +100,8 @@
 		<connection>scm:git:http://gitlab.dev.randomnoun/randomnoun/java-to-graphviz-maven-plugin.git</connection>
 		<developerConnection>scm:git:http://gitlab.dev.randomnoun/randomnoun/java-to-graphviz-plugin.git</developerConnection>
 		<url>http://gitlab.dev.randomnoun/randomnoun/java-to-graphviz-maven-plugin</url>
-    </scm>
+      <tag>java-to-graphviz-maven-plugin-1.0.0</tag>
+  </scm>
   
 	<ciManagement>
 		<system>Bamboo</system>
