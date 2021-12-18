@@ -28,7 +28,7 @@ import com.randomnoun.common.Text;
 /**
  * Maven goal which generates graphviz dot and png
  * 
- * @blog http://www.randomnoun.com/wp/2021/06/06/something-yet-be-written/
+ * @blog http://www.randomnoun.com/wp/2021/12/11/flowcharts-r-us/
  */
 @Mojo (name = "java-to-graphviz", defaultPhase = LifecyclePhase.PRE_SITE) // GENERATE_SOURCES
 
@@ -203,7 +203,6 @@ public class JavaToGraphvizMojo
     /**
      * Generates the JAR.
      * 
-     * @return The instance of File for the created archive file.
      * @throws MojoExecutionException in case of an error.
      */
 	public void createGraphviz() throws MojoExecutionException {
