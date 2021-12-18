@@ -49,12 +49,12 @@ The images can be included in the javadoc by adding `<img src="doc-files/Classna
               &lt;goal&gt;copy-resources&lt;/goal&gt;
             &lt;/goals&gt;
             &lt;configuration&gt;
-              &lt;outputDirectory&gt;${basedir}/target/javadoc-resources&lt;/outputDirectory&gt;
               &lt;resources&gt;
                 &lt;resource&gt;
                   &lt;directory&gt;src/main/javadoc&lt;/directory&gt;
                 &lt;/resource&gt;
               &lt;/resources&gt;
+              &lt;outputDirectory&gt;${basedir}/target/javadoc-resources&lt;/outputDirectory&gt;
             &lt;/configuration&gt;
           &lt;/execution&gt;
         &lt;/executions&gt;
