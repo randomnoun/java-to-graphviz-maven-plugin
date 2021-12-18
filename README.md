@@ -7,7 +7,7 @@ This plugin generates graphviz sources and images from java source code.
 This plugin can be used to help document specific classes and interfaces of a larger software project.
 
 It uses the [java-to-graphviz](https://github.com/randomnoun/java-to-graphviz) tool to generate the graphviz diagrams. This diagram 
-will read java source code, and generate graphviz 'dot' outputs which can be converted to PNGs and included in the maven-generated
+will read java source code, and generate graphviz 'dot' source, which can be converted to PNGs and included in the maven-generated
 site documentation.
 
 The shape of the diagrams can be modified using specially-constructed comments in the source file; see the 
@@ -17,7 +17,7 @@ The shape of the diagrams can be modified using specially-constructed comments i
 
 Here's a minimal pom.xml that generates some images from java source code.
 
-The images can be included in the javadoc by adding `&lt;img src="doc-files/Classname.png"/&gt;` tags to the javadoc.
+The images can be included in the javadoc by adding `<img src="doc-files/Classname.png"/>` tags to the javadoc.
 
 <pre>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
