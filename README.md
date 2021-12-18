@@ -66,7 +66,7 @@ The images can be included in the javadoc by adding `<img src="doc-files/Classna
       &lt;plugin&gt;
         &lt;groupId&gt;com.randomnoun.maven.plugins&lt;/groupId&gt;
         &lt;artifactId&gt;java-to-graphviz-maven-plugin&lt;/artifactId&gt;
-        &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+        &lt;version&gt;1.0.0&lt;/version&gt;
         &lt;executions&gt;
           &lt;execution&gt;
             &lt;id&gt;java-to-graphviz&lt;/id&gt;
