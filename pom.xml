@@ -52,7 +52,7 @@
 		<dependency>
 			<groupId>org.apache.maven</groupId>
 			<artifactId>maven-archiver</artifactId>
-			<version>3.5.0</version>
+			<version>3.5.1</version>
 		</dependency>
 	
 		<dependency>
@@ -61,7 +61,6 @@
 			<version>3.2.0</version>
 		</dependency>
 		<dependency>
-			<!-- I cannot believe how convoluted plexus is -->
 			<groupId>org.codehaus.plexus</groupId>
 			<artifactId>plexus-interpolation</artifactId>
 			<version>1.26</version>
@@ -91,7 +90,7 @@
         <dependency>
 		    <groupId>com.randomnoun.build</groupId>
 		    <artifactId>java-to-graphviz</artifactId>
-		    <version>1.0.0</version>
+		    <version>1.0.1</version>
         </dependency>
 
 	</dependencies>
@@ -320,4 +319,14 @@
 		<jackson-version>2.11.3</jackson-version>
 	</properties>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+			    <!--  this bumps plexus-archiver in maven-archiver, just so we can get a higher version of commons-compress -->
+				<groupId>org.codehaus.plexus</groupId>
+				<artifactId>plexus-archiver</artifactId>
+				<version>4.2.6</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
