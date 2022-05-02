@@ -85,8 +85,8 @@ The images can be included in the javadoc by adding `<img src="doc-files/Classna
               &lt;outputFilenamePattern&gt;{directory}/doc-files/{basename}.dot&lt;/outputFilenamePattern&gt;
               &lt;invokeGraphviz&gt;true&lt;/invokeGraphviz&gt;
               &lt;graphvizExecutable&gt;C:\Program Files\Graphviz\bin\dot.exe&lt;/graphvizExecutable&gt;
-              &lt;verbose&gt;false&lt;/graphvizExecutable&gt;
-            &lt;/verbose&gt;
+              &lt;verbose&gt;false&lt;/verbose&gt;
+            &lt;/configuration&gt;
           &lt;/execution&gt;
         &lt;/executions&gt;
       &lt;/plugin&gt;
