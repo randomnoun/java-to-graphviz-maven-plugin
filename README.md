@@ -66,7 +66,7 @@ The images can be included in the javadoc by adding `<img src="doc-files/Classna
       &lt;plugin&gt;
         &lt;groupId&gt;com.randomnoun.maven.plugins&lt;/groupId&gt;
         &lt;artifactId&gt;java-to-graphviz-maven-plugin&lt;/artifactId&gt;
-        &lt;version&gt;1.0.3&lt;/version&gt;
+        &lt;version&gt;1.0.4&lt;/version&gt;
         &lt;executions&gt;
           &lt;execution&gt;
             &lt;id&gt;java-to-graphviz&lt;/id&gt;
@@ -84,8 +84,9 @@ The images can be included in the javadoc by adding `<img src="doc-files/Classna
               &lt;outputDirectory&gt;${project.basedir}/target/javadoc-resources&lt;/outputDirectory&gt;
               &lt;outputFilenamePattern&gt;{directory}/doc-files/{basename}.dot&lt;/outputFilenamePattern&gt;
               &lt;invokeGraphviz&gt;true&lt;/invokeGraphviz&gt;
-              &lt;graphvizExecutable&gt;C:\Program Files (x86)\Graphviz2.38\bin\dot.exe&lt;/graphvizExecutable&gt;
-            &lt;/configuration&gt;
+              &lt;graphvizExecutable&gt;C:\Program Files\Graphviz\bin\dot.exe&lt;/graphvizExecutable&gt;
+              &lt;verbose&gt;false&lt;/graphvizExecutable&gt;
+            &lt;/verbose&gt;
           &lt;/execution&gt;
         &lt;/executions&gt;
       &lt;/plugin&gt;
