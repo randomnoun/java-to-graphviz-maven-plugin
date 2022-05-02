@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 import org.apache.maven.execution.MavenSession;
 import org.apache.maven.plugin.AbstractMojo;
@@ -24,6 +25,7 @@ import com.randomnoun.build.javaToGraphviz.JavaToGraphviz;
 import com.randomnoun.common.ProcessUtil;
 import com.randomnoun.common.ProcessUtil.ProcessException;
 import com.randomnoun.common.Text;
+import com.randomnoun.common.log4j.Log4jCliConfiguration;
 
 /**
  * Maven goal which generates graphviz dot and png
@@ -213,7 +215,11 @@ public class JavaToGraphvizMojo
 			throw new IllegalArgumentException("Missing outputFilename or outputFilenamePattern");
 		}
 		getLog().info("Creating graphviz diagrams");
-
+		
+		Log4jCliConfiguration lcc = new Log4jCliConfiguration();
+        Properties props = new Properties();
+        props.put("log4j.rootCategory", verbose ? "DEBUG, CONSOLE" : "INFO, CONSOLE");
+        lcc.init("[java-to-graphviz]", props);
 
 		DirectoryScanner scanner = scan(fileset);
 		String[] files = scanner.getIncludedFiles(); // also performs exclusion. So way to go, maven.
