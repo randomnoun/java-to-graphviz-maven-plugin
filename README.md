@@ -1,3 +1,5 @@
+[![Maven Central](https://img.shields.io/maven-central/v/com.randomnoun.maven.plugins/java-to-graphviz-maven-plugi.svg)](https://search.maven.org/artifact/com.randomnoun.maven.plugins/java-to-graphviz-maven-plugi)
+
 # java-to-graphviz-maven-plugin
 
 This plugin generates graphviz sources and images from java source code.
